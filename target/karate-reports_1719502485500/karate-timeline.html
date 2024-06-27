@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/getrequest\/ReadExternalFiles[1:9]","start":1719502448489,"end":1719502450905,"title":"com\/api\/automation\/getrequest\/ReadExternalFiles[1:9] 10:34:08.489-10:34:10.905 To get data in JSON format and read the expected result in a json file"},{"id":2,"group":2,"content":"com\/api\/automation\/getrequest\/ReadExternalFiles[2:18]","start":1719502448489,"end":1719502450950,"title":"com\/api\/automation\/getrequest\/ReadExternalFiles[2:18] 10:34:08.489-10:34:10.950 To get data in XML format and read the expected response in a xml file"},{"id":3,"group":3,"content":"com\/api\/automation\/getrequest\/Variables[1:9]","start":1719502448490,"end":1719502449295,"title":"com\/api\/automation\/getrequest\/Variables[1:9] 10:34:08.490-10:34:09.295 To Create a Variable"},{"id":4,"group":4,"content":"com\/api\/automation\/getrequest\/Variables[2:23]","start":1719502448489,"end":1719502449096,"title":"com\/api\/automation\/getrequest\/Variables[2:23] 10:34:08.489-10:34:09.096 Print global variable"},{"id":5,"group":5,"content":"com\/api\/automation\/getrequest\/getRequest[1:4]","start":1719502448489,"end":1719502449050,"title":"com\/api\/automation\/getrequest\/getRequest[1:4] 10:34:08.489-10:34:09.050 To test get end point with JSON data","className":"failed"},{"id":6,"group":5,"content":"com\/api\/automation\/getrequest\/getRequest[2:11]","start":1719502449174,"end":1719502449273,"title":"com\/api\/automation\/getrequest\/getRequest[2:11] 10:34:09.174-10:34:09.273 To test get end point with XML data","className":"failed"},{"id":7,"group":4,"content":"com\/api\/automation\/getrequest\/getRequest2[1:10]","start":1719502449175,"end":1719502450732,"title":"com\/api\/automation\/getrequest\/getRequest2[1:10] 10:34:09.175-10:34:10.732 To test get end point with JSON data"},{"id":8,"group":5,"content":"com\/api\/automation\/getrequest\/getRequest2[2:18]","start":1719502449399,"end":1719502450728,"title":"com\/api\/automation\/getrequest\/getRequest2[2:18] 10:34:09.399-10:34:10.728 To test get end point with JSON data using path variable"},{"id":9,"group":3,"content":"com\/api\/automation\/getrequest\/getRequest2[3:26]","start":1719502449398,"end":1719502450727,"title":"com\/api\/automation\/getrequest\/getRequest2[3:26] 10:34:09.398-10:34:10.727 To test get end point with XML data using path variable"},{"id":10,"group":3,"content":"com\/api\/automation\/getrequest\/jsonPathExpression[1:6]","start":1719502450850,"end":1719502451245,"title":"com\/api\/automation\/getrequest\/jsonPathExpression[1:6] 10:34:10.850-10:34:11.245 To get the value of property using the json path expression"},{"id":11,"group":5,"content":"com\/api\/automation\/getrequest\/responseMatcher[1:7]","start":1719502450850,"end":1719502451052,"title":"com\/api\/automation\/getrequest\/responseMatcher[1:7] 10:34:10.850-10:34:11.052 To get data in JSON format"},{"id":12,"group":4,"content":"com\/api\/automation\/getrequest\/responseMatcher[2:40]","start":1719502450850,"end":1719502451354,"title":"com\/api\/automation\/getrequest\/responseMatcher[2:40] 10:34:10.850-10:34:11.354 To get data in XML format"},{"id":13,"group":1,"content":"com\/api\/automation\/getrequest\/responseMatcher[3:72]","start":1719502450977,"end":1719502451157,"title":"com\/api\/automation\/getrequest\/responseMatcher[3:72] 10:34:10.977-10:34:11.157 To get data in JSON format and the response in not in the xml format using !="},{"id":14,"group":2,"content":"com\/api\/automation\/getrequest\/responseMatcher[4:105]","start":1719502451019,"end":1719502451235,"title":"com\/api\/automation\/getrequest\/responseMatcher[4:105] 10:34:11.019-10:34:11.235 To get data in JSON format and validate a specific property"},{"id":15,"group":5,"content":"com\/api\/automation\/getrequest\/validateJSONArray[1:8]","start":1719502451133,"end":1719502451460,"title":"com\/api\/automation\/getrequest\/validateJSONArray[1:8] 10:34:11.133-10:34:11.460 To get data in JSON format and validate a specific property"},{"id":16,"group":1,"content":"com\/api\/automation\/getrequest\/validateJSONArray[2:32]","start":1719502451228,"end":1719502451469,"title":"com\/api\/automation\/getrequest\/validateJSONArray[2:32] 10:34:11.228-10:34:11.469 Validate fuzzy matchers with JSON"},{"id":17,"group":2,"content":"com\/api\/automation\/getrequest\/validateXMLContent[1:8]","start":1719502451308,"end":1719502451549,"title":"com\/api\/automation\/getrequest\/validateXMLContent[1:8] 10:34:11.308-10:34:11.549 To get data in XML format and validate a specific property"},{"id":18,"group":3,"content":"com\/api\/automation\/getrequest\/validateXMLContent[2:23]","start":1719502451334,"end":1719502451633,"title":"com\/api\/automation\/getrequest\/validateXMLContent[2:23] 10:34:11.334-10:34:11.633 To get data in XML format and validate a specific property"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

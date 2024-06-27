@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1d63fcc4-f6bf-479e-9e25-a39f1eacec56",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.api.automation.postrequest.schemaValidation</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-06-27 10:20:31 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Schema Validation in a JSON response</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:17]"><span>[2:17]</span> <span>Schema Validation for GET end point</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/api/automation/postrequest/schemaValidation.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validate JSON schema</span>
+          <span class="feature-description">To validate json schema post</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Schema Validation in a JSON response</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>173</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:9897&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">10:20:26.892 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/normal/webapi/add&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request read(&#39;../JsonRequest.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers {Accept: &#39;application/json&#39;, Content-Type: &#39;application/json&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">57</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">10:20:27.001 request:
+1 &gt; POST http://localhost:9897/normal/webapi/add
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 175
+1 &gt; Host: localhost:9897
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]}
+
+10:20:27.018 response time in milliseconds: 12
+1 &lt; 201
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Thu, 27 Jun 2024 15:20:26 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def schema = read(&#39;../JsonSchema.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == schema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">64</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:17]</span>
+                <span class="scenario-name">Schema Validation for GET end point</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>442</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:9897&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">10:20:27.018 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/normal/webapi/all&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">79</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">10:20:27.049 request:
+1 &gt; GET http://localhost:9897/normal/webapi/all
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9897
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:20:27.085 response time in milliseconds: 18
+1 &lt; 200
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Thu, 27 Jun 2024 15:20:26 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:232,&quot;jobTitle&quot;:&quot;LOS&quot;,&quot;jobDescription&quot;:&quot;SOL&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:53,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:248,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:949,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:533,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:586,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:713,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:691,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:330,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:554,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:550,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:229,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:742,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:307,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:392,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:693,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:654,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:235,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:736,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:283,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:892,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:965,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:661,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:560,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:908,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:91,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:731,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:769,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:953,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:162,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:919,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:244,&quot;jobTitle&quot;:&quot;LOS&quot;,&quot;jobDescription&quot;:&quot;SOL&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:442,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:919,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:890,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:100,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:131,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:558,&quot;jobTitle&quot;:&quot;LOS&quot;,&quot;jobDescription&quot;:&quot;SOL&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:758,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:911,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def projectSchema = { &quot;projectName&quot;: &#39;#string&#39;, &quot;technology&quot;: &#39;#[] #string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mainSchema = {&quot;jobId&quot;: &#39;#number&#39;,&quot;jobTitle&quot;: &#39;#string&#39;,&quot;jobDescription&quot;: &#39;#string&#39;,&quot;experience&quot;: &#39;#[] #string&#39;, &quot;project&quot;: &#39;#[] ##(projectSchema)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def mainSchema = {&quot;jobId&quot;: &#39;#number&#39;,&quot;jobTitle&quot;: &#39;#string&#39;,&quot;jobDescription&quot;: &#39;#string&#39;,&quot;experience&quot;: &#39;#[] #string&#39;, &quot;project&quot;: &#39;#[] #object&#39;}</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print mainSchema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">10:20:27.145 [print] {
+  &quot;jobId&quot;: &quot;#number&quot;,
+  &quot;jobTitle&quot;: &quot;#string&quot;,
+  &quot;jobDescription&quot;: &quot;#string&quot;,
+  &quot;experience&quot;: &quot;#[] #string&quot;,
+  &quot;project&quot;: &quot;#[] ##(projectSchema)&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref failed">26</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell failed">344</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.26">&#39;#[] ##(mainSchema)&#39;</div>
+
+  
+
+  <div class="preformatted" data-parent="0.26">10:20:27.492 classpath:com/api/automation/postrequest/schemaValidation.feature:26
+And match response ==
+&quot;&quot;&quot;
+&#39;#[] ##(mainSchema)&#39;
+&quot;&quot;&quot;
+match failed: EQUALS
+  $ | all array elements matched (LIST:STRING)
+  [{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:232,&quot;jobTitle&quot;:&quot;LOS&quot;,&quot;jobDescription&quot;:&quot;SOL&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:53,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:248,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:949,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:533,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:586,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:713,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:691,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:330,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:554,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:550,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:229,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:742,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:307,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:392,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:693,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:654,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:235,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:736,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:283,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:892,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:965,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:661,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:560,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:908,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:91,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:731,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:769,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:953,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:162,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:919,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:244,&quot;jobTitle&quot;:&quot;LOS&quot;,&quot;jobDescription&quot;:&quot;SOL&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:442,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:919,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:890,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:100,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:131,&quot;jobTitle&quot;:&quot;IOS&quot;,&quot;jobDescription&quot;:&quot;APPLE&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:558,&quot;jobTitle&quot;:&quot;LOS&quot;,&quot;jobDescription&quot;:&quot;SOL&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:758,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]},{&quot;jobId&quot;:4,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:911,&quot;jobTitle&quot;:&quot;QA Tester&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;RRD&quot;,&quot;ApD&quot;,&quot;MobileIron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Eccc&quot;,&quot;technology&quot;:[&quot;Selenium&quot;,&quot;Robot&quot;]}]},{&quot;jobId&quot;:3,&quot;jobTitle&quot;:&quot;Data Engg&quot;,&quot;jobDescription&quot;:&quot;Create machine learning apps&quot;,&quot;experience&quot;:[&quot;IBM&quot;,&quot;INTEL&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;SCASE&quot;,&quot;technology&quot;:[&quot;Python&quot;,&quot;R&quot;]}]}]
+  &#39;#[] ##(mainSchema)&#39;
+
+    $[3] | not equal | match failed for name: &#39;project&#39; (MAP:MAP)
+    {&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Data Analyst&quot;,&quot;jobDescription&quot;:&quot;Develop machine learning models&quot;,&quot;experience&quot;:[&quot;Nothing&quot;],&quot;project&quot;:[]}
+    {&quot;jobId&quot;:&quot;#number&quot;,&quot;jobTitle&quot;:&quot;#string&quot;,&quot;jobDescription&quot;:&quot;#string&quot;,&quot;experience&quot;:&quot;#[] #string&quot;,&quot;project&quot;:&quot;#[] ##(projectSchema)&quot;}
+
+      $[3].project | all array elements matched (LIST:STRING)
+      []
+      &#39;#[] ##(projectSchema)&#39;
+
+
+classpath:com/api/automation/postrequest/schemaValidation.feature:26
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

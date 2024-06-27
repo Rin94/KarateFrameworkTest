@@ -1,0 +1,18 @@
+{
+    "jobId": 3,
+    "jobTitle": "Data Engg",
+    "jobDescription": "Create machine learning apps",
+    "experience": [
+      "IBM",
+      "INTEL"
+    ],
+    "project": [
+      {
+        "projectName": "SCASE",
+        "technology": [
+          "Python",
+          "R"
+        ]
+      }
+    ]
+}

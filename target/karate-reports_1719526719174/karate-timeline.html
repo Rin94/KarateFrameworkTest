@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[1:7]","start":1719525796884,"end":1719525797649,"title":"com\/api\/automation\/configuration\/createJobEntry[1:7] 17:03:16.884-17:03:17.649 To create the Job Entry in JSON format"},{"id":2,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[2:16]","start":1719525797673,"end":1719525797854,"title":"com\/api\/automation\/configuration\/createJobEntry[2:16] 17:03:17.673-17:03:17.854 To create the Job Entry using XML request body formt"},{"id":3,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[3:25]","start":1719525797870,"end":1719525797930,"title":"com\/api\/automation\/configuration\/createJobEntry[3:25] 17:03:17.870-17:03:17.930 To create the Job Entry using XML request body formt and receive the response in XML"},{"id":4,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[6:54]","start":1719525797940,"end":1719525798011,"title":"com\/api\/automation\/configuration\/createJobEntry[6:54] 17:03:17.940-17:03:18.011 To create the Job Entry in JSON format with embedded expression"},{"id":5,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[7:64]","start":1719525798034,"end":1719525798097,"title":"com\/api\/automation\/configuration\/createJobEntry[7:64] 17:03:18.034-17:03:18.097 To create the Job Entry using XML request body formt with embedded expression"},{"id":6,"group":1,"content":"com\/api\/automation\/configuration\/getGlobalConfig[1:7]","start":1719525795383,"end":1719525795723,"title":"com\/api\/automation\/configuration\/getGlobalConfig[1:7] 17:03:15.383-17:03:15.723 To get the value of username and password from karate-config.js"},{"id":7,"group":1,"content":"com\/api\/automation\/configuration\/getRequest[1:8]","start":1719525799078,"end":1719525799151,"title":"com\/api\/automation\/configuration\/getRequest[1:8] 17:03:19.078-17:03:19.151 To get all the data from application in JSON format"},{"id":8,"group":1,"content":"com\/api\/automation\/configuration\/getRequest[2:16]","start":1719525799164,"end":1719525799194,"title":"com\/api\/automation\/configuration\/getRequest[2:16] 17:03:19.164-17:03:19.194 To get all the data from application in JSON format using path variable"},{"id":9,"group":1,"content":"com\/api\/automation\/configuration\/getRequest[3:25]","start":1719525799205,"end":1719525799238,"title":"com\/api\/automation\/configuration\/getRequest[3:25] 17:03:19.205-17:03:19.238 To get all the data from application in XML format using path variable"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

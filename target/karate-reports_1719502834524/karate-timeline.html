@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/putrequest\/updateJobEntry[1:7]","start":1719502668359,"end":1719502669685,"title":"com\/api\/automation\/putrequest\/updateJobEntry[1:7] 10:37:48.359-10:37:49.685 To update the job entry for existing job in JSON format"},{"id":2,"group":1,"content":"com\/api\/automation\/putrequest\/updateJobEntry[2:26]","start":1719502669725,"end":1719502669902,"title":"com\/api\/automation\/putrequest\/updateJobEntry[2:26] 10:37:49.725-10:37:49.902 To update the job entry for existing job in JSON format by calling another feature file"},{"id":3,"group":1,"content":"com\/api\/automation\/putrequest\/updateJobEntry[3:41]","start":1719502669922,"end":1719502670011,"title":"com\/api\/automation\/putrequest\/updateJobEntry[3:41] 10:37:49.922-10:37:50.011 To update the job entry for existing job in JSON format by calling another feature with vars"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
