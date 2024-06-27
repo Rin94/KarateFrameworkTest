@@ -1,0 +1,19 @@
+<item>
+        <jobId>4</jobId>
+        <jobTitle>QA Tester</jobTitle>
+        <jobDescription>To develop andriod application</jobDescription>
+        <experience>
+            <experience>RRD</experience>
+            <experience>ApD</experience>
+            <experience>MobileIron</experience>
+        </experience>
+        <project>
+            <project>
+                <projectName>Eccc</projectName>
+                <technology>
+                    <technology>Selenium</technology>
+                    <technology>Robot</technology>
+                </technology>
+            </project>
+        </project>
+    </item>

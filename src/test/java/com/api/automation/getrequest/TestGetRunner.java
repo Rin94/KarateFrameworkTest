@@ -5,7 +5,7 @@ import com.intuit.karate.junit5.Karate.Test;
 
 public class TestGetRunner {
 	//firt way to create a runner for karate test
-	//@Test
+	@Test
 	public Karate runTest() {
 		return Karate.run("getRequest2", "responseMatcher", "validateJSONArray").relativeTo(getClass());
 		

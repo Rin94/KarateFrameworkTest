@@ -1,27 +1,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
- 
+
     <groupId>com.api.automation</groupId>
     <artifactId>karateframework</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
- 
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
         <maven.compiler.version>3.11.0</maven.compiler.version>
         <maven.surefire.version>3.0.0</maven.surefire.version>
         <karate.version>1.4.1</karate.version>
-    </properties>    
+    </properties>
 
-    <dependencies>         
+    <dependencies>
         <dependency>
             <groupId>com.intuit.karate</groupId>
             <artifactId>karate-junit5</artifactId>
             <version>${karate.version}</version>
             <scope>test</scope>
-        </dependency>		
+        </dependency>
+        <dependency>
+            <!-- https://github.com/damianszczepanik/cucumber-reporting -->
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>5.4.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -50,9 +56,43 @@
                 <version>${maven.surefire.version}</version>
                 <configuration>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
+                    <includes>
+                       <!-- <include>**/ParallelBuilder.java</include>-->
+                        <include>**/ParallelBuilderWithTags</include>
+                    </includes>
+                    <systemProperties>
+                        <location>com/api/automation</location>
+                        <tags>@Regression</tags>
+                        <karate.env>${karate.profile}</karate.env>
+
+                    </systemProperties>
+                    <rerunFailingTestsCount>2</rerunFailingTestsCount>
                 </configuration>
-            </plugin>          
-        </plugins>        
-    </build>       
-    
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>staging</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <karate.profile>staging</karate.profile>
+            </properties>
+        </profile>
+        <profile>
+            <id>preprod</id>
+            <properties>
+                <karate.profile>preprod</karate.profile>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <karate.profile>prod</karate.profile>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>
