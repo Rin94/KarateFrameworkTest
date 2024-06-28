@@ -2,6 +2,7 @@ pipeline{
     //multiple stages{
         //multiple steps for execution
     agent any
+    parameters { choice(name: 'Environment', choices: ['staging', 'preprod', 'prod'], description: 'Profile needs to be used while executing test') }
     stages{
         stage('Clean Stage'){
             steps{
@@ -43,7 +44,7 @@ pipeline{
 
             steps{
                 echo 'Test Execution stage $w'
-                sh '/opt/homebrew/Cellar/maven/3.8.2/bin/mvn -P prod test'
+                sh '/opt/homebrew/Cellar/maven/3.8.2/bin/mvn -P ${Environment} test'
 
             }
 
