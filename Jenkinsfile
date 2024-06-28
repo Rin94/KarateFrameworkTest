@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage('Clean Stage'){
             steps{
-                echo 'CleanUp stage'
+                echo 'echo CleanUp stage $w'
                 cleanWs notFailBuild: true
 
             }
@@ -13,7 +13,7 @@ pipeline{
         }
         stage('Git Checkout'){
             steps{
-                echo 'Checkout stage'
+                echo 'echo Checkout stage $w'
                 checkout scmGit(branches: [[name: '**']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Rin94/KarateFrameworkTest.git']])
 
             }
@@ -21,14 +21,14 @@ pipeline{
         }
         stage('Restore Package Stage'){
             steps{
-                echo 'echo Restore packege stage'
+                echo 'echo Restore packege stage $w'
 
             }
 
         }
         stage('Build Stage'){
             steps{
-                echo 'build stage'
+                echo 'echo build stage $w'
                 // Run Maven on a Unix agent.
 
                 sh '/opt/homebrew/Cellar/maven/3.8.2/bin/mvn -version'
@@ -58,3 +58,5 @@ pipeline{
             cucumber buildStatus: 'UNCHANGED', customCssFiles: '', customJsFiles: '', failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'target/karate-reports', pendingStepsNumber: -1, reportTitle: 'Karate Test Execution', skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
         }
     }
+
+}
