@@ -58,7 +58,7 @@
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                     <includes>
                        <!-- <include>**/ParallelBuilder.java</include>-->
-                        <include>**/ParallelBuilderWithTags</include>
+                        <include>**/ParallelBuilderWithCucumberReport</include>
                     </includes>
                     <systemProperties>
                         <location>com/api/automation</location>
